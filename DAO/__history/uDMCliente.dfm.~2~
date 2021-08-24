@@ -1,0 +1,39 @@
+object DMCliente: TDMCliente
+  OldCreateOrder = False
+  Left = 970
+  Top = 285
+  Height = 310
+  Width = 467
+  object dsePesquisar: TSQLDataSet
+    Params = <>
+    Left = 44
+    Top = 30
+  end
+  object dseInserir: TSQLDataSet
+    Params = <>
+    Left = 105
+    Top = 31
+  end
+  object dseAlterar: TSQLDataSet
+    Params = <>
+    Left = 177
+    Top = 31
+  end
+  object dseExcluir: TSQLDataSet
+    Params = <>
+    Left = 242
+    Top = 33
+  end
+  object dspPesquisar: TDataSetProvider
+    DataSet = cdsPesquisar
+    Left = 37
+    Top = 86
+  end
+  object cdsPesquisar: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspPesquisar'
+    Left = 38
+    Top = 149
+  end
+end

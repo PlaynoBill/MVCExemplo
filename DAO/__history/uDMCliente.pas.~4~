@@ -1,0 +1,66 @@
+unit uDMCliente;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, uDMConexao, Data.FMTBcd, Datasnap.DBClient, Datasnap.Provider, Data.DB, Data.SqlExpr;
+
+type
+  TDMCliente = class(TDataModule)
+    dsePesquisar: TSQLDataSet;
+    dseInserir: TSQLDataSet;
+    dseAlterar: TSQLDataSet;
+    dseExcluir: TSQLDataSet;
+    dspPesquisar: TDataSetProvider;
+    cdsPesquisar: TClientDataSet;
+    cdsPesquisarID_CLIENTE: TIntegerField;
+    cdsPesquisarCODIGO: TIntegerField;
+    wdstrngfldPesquisarRAZAO: TWideStringField;
+    wdstrngfldPesquisarTELEFONE: TWideStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    function GerarID: Integer;
+
+  end;
+
+var
+  DMCliente: TDMCliente;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+{ TDMCliente }
+
+function TDMCliente.GerarID: Integer;
+var sqlSequencia: TSQLDataSet;
+
+begin
+  sqlSequencia := TSQLDataSet.Create(nil);
+
+  try
+    with sqlSequencia do
+    begin
+        SQLConnection := DTMConexao.dbxConexao;
+        CommandText := 'select  coalesce(max(ID_CLIENTE,0) + 1 as seq from clientes';
+        Open;
+
+        Result := FieldByName('seq').AsInteger;
+    end;
+
+
+
+  finally
+
+  FreeAndNil(sqlSequencia);
+
+  end;
+
+
+end;
+
+end.

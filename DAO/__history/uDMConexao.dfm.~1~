@@ -1,0 +1,11 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Left = 795
+  Top = 292
+  Height = 280
+  Width = 641
+  object dbxConexao: TSQLConnection
+    Left = 82
+    Top = 34
+  end
+end

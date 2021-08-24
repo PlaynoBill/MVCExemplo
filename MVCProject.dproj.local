@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/01/13 11:18:05.000.346,=C:\Users\pleffer\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/01/13 11:20:51.000.275,=C:\Users\pleffer\Documents\RAD Studio\Projects\GroupedItems2.pas</Transaction>
+    <Transaction>2015/01/13 11:20:51.000.381,=C:\Users\pleffer\Documents\RAD Studio\Projects\SplitItemDetail1.pas</Transaction>
+    <Transaction>2015/01/13 11:21:25.000.746,=C:\Users\pleffer\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/01/13 11:21:37.000.407,=C:\Users\pleffer\Documents\RAD Studio\Projects\GroupedItems1.pas</Transaction>
+    <Transaction>2015/01/13 11:21:37.000.514,=C:\Users\pleffer\Documents\RAD Studio\Projects\ItemDetail1.pas</Transaction>
+    <Transaction>2015/01/13 15:01:48.000.670,=C:\Users\pleffer\Documents\RAD Studio\Projects\GroupedItems1.pas</Transaction>
+    <Transaction>2015/01/13 15:01:49.000.135,=C:\Users\pleffer\Documents\RAD Studio\Projects\ItemDetail1.pas</Transaction>
+    <Transaction>2015/01/13 15:03:53.000.173,=C:\Users\pleffer\Documents\RAD Studio\Projects\SplitItemDetail1.pas</Transaction>
+    <Transaction>2015/01/13 15:03:53.000.058,=C:\Users\pleffer\Documents\RAD Studio\Projects\GroupedItems2.pas</Transaction>
+    <Transaction>2015/08/05 12:48:27.000.380,=C:\Users\pleffer\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/08/03 16:12:33.000.059,=C:\Users\pleffer\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/20 17:04:10.000.927,=C:\Users\pleffer\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/20 17:06:30.000.008,C:\Users\pleffer\Documents\MVCExemplo\View\uPrincipal.dfm=C:\Users\pleffer\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/08/20 17:06:30.000.008,C:\Users\pleffer\Documents\MVCExemplo\View\uPrincipal.pas=C:\Users\pleffer\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/20 17:07:03.000.544,=C:\Users\pleffer\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/20 17:10:29.000.177,C:\Users\pleffer\Documents\MVCExemplo\View\UCadCliente.pas=C:\Users\pleffer\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/20 17:10:29.000.178,C:\Users\pleffer\Documents\MVCExemplo\View\UCadCliente.dfm=C:\Users\pleffer\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/08/20 17:37:37.000.180,C:\Users\pleffer\Documents\MVCExemplo\MVCProject.dproj=C:\Users\pleffer\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/08/23 10:16:14.000.058,=C:\Users\pleffer\Documents\MVCExemplo\Unit1.pas</Transaction>
+    <Transaction>2021/08/23 10:16:29.000.353,C:\Users\pleffer\Documents\MVCExemplo\Unit1.pas=C:\Users\pleffer\Documents\MVCExemplo\Model\uClienteModel.pas</Transaction>
+    <Transaction>2021/08/23 10:30:16.000.488,=C:\Users\pleffer\Documents\MVCExemplo\Unit1.pas</Transaction>
+    <Transaction>2021/08/23 10:30:28.000.021,C:\Users\pleffer\Documents\MVCExemplo\Unit1.pas=C:\Users\pleffer\Documents\MVCExemplo\Controller\uClienteController.pas</Transaction>
+    <Transaction>2021/08/23 10:40:27.000.879,=C:\Users\pleffer\Documents\MVCExemplo\Unit1.pas</Transaction>
+    <Transaction>2021/08/23 10:41:43.000.553,C:\Users\pleffer\Documents\MVCExemplo\Unit1.pas=C:\Users\pleffer\Documents\MVCExemplo\DAO\uDMConexao.pas</Transaction>
+    <Transaction>2021/08/23 10:41:43.000.553,C:\Users\pleffer\Documents\MVCExemplo\Unit1.dfm=C:\Users\pleffer\Documents\MVCExemplo\DAO\uDMConexao.dfm</Transaction>
+    <Transaction>2021/08/23 10:51:18.000.819,=C:\Users\pleffer\Documents\MVCExemplo\Unit1.pas</Transaction>
+    <Transaction>2021/08/23 10:53:38.000.202,C:\Users\pleffer\Documents\MVCExemplo\Unit1.dfm=C:\Users\pleffer\Documents\MVCExemplo\DAO\uDMCliente.dfm</Transaction>
+    <Transaction>2021/08/23 10:53:38.000.202,C:\Users\pleffer\Documents\MVCExemplo\Unit1.pas=C:\Users\pleffer\Documents\MVCExemplo\DAO\uDMCliente.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,16 @@
+program MVCProject;
+
+uses
+  Vcl.Forms,
+  uPrincipal in 'View\uPrincipal.pas' {frmPrincipal},
+  UCadCliente in 'View\UCadCliente.pas' {frmCadCliente};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmCadCliente, frmCadCliente);
+  Application.Run;
+end.

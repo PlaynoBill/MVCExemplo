@@ -1,0 +1,110 @@
+unit uDMCliente;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, uDMConexao, Data.FMTBcd, Datasnap.DBClient, Datasnap.Provider, Data.DB, Data.SqlExpr, uClienteModel;
+
+type
+  TDMCliente = class(TDataModule)
+    dsePesquisar: TSQLDataSet;
+    dseInserir: TSQLDataSet;
+    dseAlterar: TSQLDataSet;
+    dseExcluir: TSQLDataSet;
+    dspPesquisar: TDataSetProvider;
+    cdsPesquisar: TClientDataSet;
+    cdsPesquisarID_CLIENTE: TIntegerField;
+    cdsPesquisarCODIGO: TIntegerField;
+    wdstrngfldPesquisarRAZAO: TWideStringField;
+    wdstrngfldPesquisarTELEFONE: TWideStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    function GerarID: Integer;
+    procedure Pesquisar(sNome: string);
+    procedure CarregarCliente(oCliente: TCliente; iCodigo: Integer);
+
+  end;
+
+var
+  DMCliente: TDMCliente;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+{ TDMCliente }
+
+procedure TDMCliente.CarregarCliente(oCliente: TCliente; iCodigo: Integer);
+var sqlcliente: TSQLDataSet;
+
+begin
+    sqlcliente := TSQLDataSet.Create(nil);
+
+    try
+     with sqlcliente do
+     begin
+      SQLConnection := DTMConexao.dbxConexao;
+      CommandText := 'select * from clientes where (id_cliente = ' + IntToStr(iCodigo) + ')';
+      Open;
+        with oCliente  do
+        begin
+          ID := FieldByName('ID_cliente').AsInteger;
+          NOME := FieldByName('Razao').AsString;
+          Documento := FieldByName('CPFOUCNPJ').AsString;
+          TIPO := FieldByName('FISICAOUJURIDICA').AsString;
+          Telefone := FieldByName('TELEFONE').AsString;
+        end;
+
+
+
+
+     end;
+    finally
+      FreeAndNil(sqlcliente);
+    end;
+
+
+end;
+
+function TDMCliente.GerarID: Integer;
+var sqlSequencia: TSQLDataSet;
+
+begin
+  sqlSequencia := TSQLDataSet.Create(nil);
+
+  try
+    with sqlSequencia do
+    begin
+        SQLConnection := DTMConexao.dbxConexao;
+        CommandText := 'select  coalesce(max(ID_CLIENTE,0) + 1 as seq from clientes';
+        Open;
+
+        Result := FieldByName('seq').AsInteger;
+    end;
+
+
+
+  finally
+
+  FreeAndNil(sqlSequencia);
+
+  end;
+
+
+end;
+
+procedure TDMCliente.Pesquisar(sNome: string);
+begin
+  if cdsPesquisar.Active then
+     cdsPesquisar.Close;
+     cdsPesquisar.Params[0].AsString :='%' + sNome + '%';
+     cdsPesquisar.Open;
+     cdsPesquisar.First;
+
+end;
+
+end.
